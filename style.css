@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1em;
+    background-color: #101010;
+    color: black;
+}
+
+.logobucket{
+}
+
+.logo{
+    height: 9vw;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+section {
+    background-color: aliceblue;
+}
+
+#currpos {
+    width: 80vw;
+    padding-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#curr {
+    width: 65vw;
+    padding-left: 1vw;
+    font-family: 'Noto Serif', serif;
+    font-weight: 600;
+}
+
+#details {
+    margin-top: 7vh;
+    padding-top: 10vh;
+    width: 80vw;
+    font-family: 'Noto Serif', serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.dcontent{
+    display: flex;
+    justify-content: space-between;
+    width: 57vw;
+    align-items: center;
+}
+
+.contentblock {
+    display: inline-block;
+    width: 40%;
+}
+
+.content {
+    display: flex;
+}
+
+.chead {
+    display: inline-block;
+    width: 22%;
+}
+
+.cdiv {
+    display: inline-block;
+    width: 3%;
+}
+
+#study {
+    padding-top: 0vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+}
+
+.table-wrapper {
+    width: 65vw;
+}
+
+.table-wrapper table {
+    width: 100%;
+    margin: 2vh 0 1vh;
+    border-collapse: collapse;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 0 0.5vh;
+}
+
+.table-wrapper table th,
+.table-wrapper table td {
+    padding: 1vh;
+}
+
+#study_table th {
+    background-color: rgba(0, 123, 255, 0.15);
+    font-weight: 700;
+}
+
+.details {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+}
+
+div.heading {
+    background-color: rgba(0, 123, 255, 0.15);
+    font-weight: 700;
+    margin: 0.5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 65vw;
+    text-align: center;
+}
+
+.details table {
+    margin: 0%;
+}
+
+.details .table-wrapper table thead tr th {
+    font-weight: 400;
+    background-color: rgba(0, 123, 255, 0.15);
+    padding: 0%;
+    width: 13vw;
+    padding: 0.5vw;
+}
+
+.table-wrapper table thead tr th div:first-child {
+    font-weight: 700;
+}
+
+.table-wrapper table thead tr th div:last-child {
+    font-size: small;
+}
+
+.table-wrapper table thead tr td {
+    text-align: justify;
+    padding-right: 1vw;
+}
+
+#hobby {
+    margin-bottom: 7vh;
+    padding-bottom: 10vh;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
