@@ -216,7 +216,7 @@ div.heading {
     }
 }
 
-@media (min-width:0px) and (max-width:768px){
+@media (max-width:768px){
     #block{
         position: fixed;
         background-color: aliceblue;
