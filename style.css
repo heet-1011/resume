@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap');
 
+
+* {
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -10,10 +16,11 @@ body {
     color: black;
 }
 
-.logobucket{
+body::-webkit-scrollbar{
+    display: none;
 }
 
-.logo{
+.logo {
     height: 9vw;
 }
 
@@ -27,6 +34,7 @@ section {
 }
 
 #currpos {
+    margin: 0%;
     width: 80vw;
     padding-top: 1vh;
     display: flex;
@@ -54,16 +62,18 @@ section {
     border-top-left-radius: 3px;
 }
 
-.dcontent{
+.dcontent {
     display: flex;
     justify-content: space-between;
-    width: 57vw;
+    width: 54vw;
     align-items: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 .contentblock {
     display: inline-block;
-    width: 40%;
+    width: 27vw;
 }
 
 .content {
@@ -72,12 +82,12 @@ section {
 
 .chead {
     display: inline-block;
-    width: 22%;
+    width: 6vw;
 }
 
 .cdiv {
     display: inline-block;
-    width: 3%;
+    width: 1vw;
 }
 
 #study {
@@ -149,7 +159,7 @@ div.heading {
 }
 
 .table-wrapper table thead tr th div:last-child {
-    font-size: small;
+    font-size: 0.85em;
 }
 
 .table-wrapper table thead tr td {
@@ -162,4 +172,68 @@ div.heading {
     padding-bottom: 10vh;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
+}
+
+#block{
+    display: none;
+}
+
+@media (min-width:1024px) and (max-width:1440px){
+    body{
+        font-size: 0.8em;
+    }
+
+    .dcontent{
+        margin-left: 0.8vw;
+        margin-right: 0.8vw;
+    }
+
+    .details .table-wrapper table thead tr th {
+        width: 14vw;
+    }
+
+    .table-wrapper table thead tr th div:last-child {
+        font-size: 0.75em;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    body{
+        font-size: 0.7em;
+    }
+
+    .dcontent{
+        margin-left: 0.8vw;
+        margin-right: 0.8vw;
+    }
+
+    .details .table-wrapper table thead tr th {
+        width: 14vw;
+    }
+
+    .table-wrapper table thead tr th div:last-child {
+        font-size: 0.7em;
+    }
+}
+
+@media (min-width:0px) and (max-width:768px){
+    #block{
+        position: fixed;
+        background-color: aliceblue;
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #block div{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: large;
+        padding: 10px;
+    }
 }
